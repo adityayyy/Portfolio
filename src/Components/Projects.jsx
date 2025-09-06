@@ -10,11 +10,12 @@ const Projects = () => {
     whileInView={{opacity: 1, x: 0}}
     initial={{opacity: 0, x: -100}}
     transition={{Duration: 1.5}}
-    className="my-20 text-center text-8xl">Coming soon...</motion.h2>
+    className="my-20 text-center text-8xl">Coming late...</motion.h2>
    
    </div>
     </div>
   )
 }
+
 
 export default Projects
