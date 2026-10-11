@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditya Ganeshgudi — Applied AI Engineer</title>
+<meta name="description" content="CS student building with AI, IoT and software. MoodCat, TinytinyLM, AI Text Toolkit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&family=Cormorant+Garamond:wght@300;400&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>
+/* Pre-paint theme — must stay inline so there is no light/dark flash.
+   Everything else lives in js/config.js + js/app.js. */
+try{var t=localStorage.getItem("theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}
+</script>
+</head>
+<body>
+
+<!-- shared icon symbols (deduped; rendered via <use>) -->
+<svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-1-2.6c3.1-.4 6.4-1.6 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-1 2.6V22"/></symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#record">Record</a>
+      </nav>
+      <button class="menu-btn" data-menu-toggle aria-expanded="false" aria-controls="menuSheet">Menu</button>
+    </div>
+    <a class="wordmark" href="#top">Aditya G.</a>
+    <div class="nav-right">
+      <button class="menu-btn theme-btn" data-theme-toggle aria-label="Switch to dark mode">Dark</button>
+      <a data-config="github" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+      </a>
+      <a class="btn btn--nav" href="#contact">Say hello</a>
+    </div>
+  </div>
+</header>
+
+<div class="menu-sheet" id="menuSheet" data-menu-sheet>
+  <a href="#projects">Projects</a>
+  <a href="#about">About</a>
+  <a href="#record">Record</a>
+  <a class="btn btn--primary" href="#contact">Say hello</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow eyebrow--light">Applied AI Engineering</p>
+    <h1 class="display">
+      <span class="display-big">Aditya</span>
+      <span class="display-big display-big--name">Ganeshgudi</span>
+    </h1>
+    <div class="hero-cta">
+      <a class="btn btn--onblack" href="#contact">Get in touch →</a>
+      <a class="btn btn--primary" href="#projects">See projects ↓</a>
+    </div>
+    <p class="hero-sub mono">CS student · India · AI · IoT · Software</p>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+        <!-- eclipse ring + crescent -->
+        <circle cx="960" cy="118" r="80" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <path fill="#ffffff" fill-rule="evenodd" d="M892 118 a68 68 0 1 0 136 0 a68 68 0 1 0 -136 0 M928 112 a58 58 0 1 0 116 0 a58 58 0 1 0 -116 0"/>
+        <!-- accent stars -->
+        <rect x="300" y="70" width="8" height="8" fill="#a678ff"/>
+        <rect x="420" y="120" width="8" height="8" fill="#a678ff"/>
+        <rect x="150" y="150" width="8" height="8" fill="#a678ff"/>
+        <circle cx="250" cy="210" r="4" fill="#a678ff"/>
+        <circle cx="880" cy="52" r="4" fill="#a678ff"/>
+        <!-- cel clouds / ground fog -->
+        <g transform="translate(0 34)">
+          <path d="M-20 420 q10 -90 100 -70 q30 -70 110 -45 q60 -50 130 -5 q70 -35 120 35 q60 -20 90 40 q40 0 55 45 Z" fill="#a678ff" stroke="#000000" stroke-width="4"/>
+          <path d="M700 420 q15 -80 100 -60 q35 -65 115 -40 q55 -45 120 0 q75 -30 125 40 q60 -15 80 60 Z" fill="#a678ff" stroke="#000000" stroke-width="4"/>
+        </g>
+        <!-- floor -->
+        <line x1="0" y1="360" x2="1200" y2="360" stroke="#ffffff" stroke-width="3"/>
+        <!-- desk -->
+        <rect x="430" y="250" width="410" height="14" rx="6" fill="#ffffff"/>
+        <rect x="452" y="264" width="12" height="96" fill="#ffffff"/>
+        <rect x="806" y="264" width="12" height="96" fill="#ffffff"/>
+        <!-- monitor -->
+        <rect x="700" y="244" width="36" height="8" fill="#ffffff"/>
+        <rect x="628" y="118" width="180" height="128" rx="10" fill="#ffffff"/>
+        <rect x="640" y="130" width="156" height="104" rx="4" fill="#111111"/>
+        <path d="M656 150 H740 M668 186 H780 M668 222 H712" stroke="#a678ff" stroke-width="6" stroke-linecap="round"/>
+        <path d="M668 168 H764 M656 204 H730" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+        <rect x="724" y="215" width="10" height="14" fill="#a678ff"/>
+        <!-- coffee mug -->
+        <path d="M766 220 q10 -8 2 -16" stroke="#a678ff" stroke-width="3" fill="none"/>
+        <rect x="750" y="226" width="34" height="24" rx="6" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <path d="M784 232 a8 8 0 0 1 0 12" stroke="#000000" stroke-width="3" fill="none"/>
+        <!-- chair -->
+        <rect x="486" y="176" width="16" height="96" rx="8" fill="#ffffff"/>
+        <rect x="470" y="272" width="96" height="14" rx="7" fill="#ffffff"/>
+        <rect x="506" y="286" width="14" height="66" fill="#ffffff"/>
+        <rect x="478" y="352" width="70" height="10" rx="5" fill="#ffffff"/>
+        <!-- legs -->
+        <path d="M505 256 h92 a13 13 0 0 1 0 26 h-92 z" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <rect x="572" y="278" width="28" height="72" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <rect x="566" y="344" width="58" height="18" rx="9" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <!-- torso in accent hoodie -->
+        <path d="M512 264 C504 224 512 196 534 184 C552 174 578 178 586 194 C594 210 592 236 580 254 C570 268 540 274 512 264 Z" fill="#a678ff" stroke="#000000" stroke-width="3"/>
+        <path d="M526 194 q-18 -4 -16 14 q12 -14 22 -8 z" fill="#a678ff" stroke="#000000" stroke-width="3"/>
+        <!-- keyboard -->
+        <rect x="610" y="240" width="124" height="12" rx="6" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <rect x="620" y="244" width="34" height="4" fill="#a678ff"/>
+        <!-- arms typing -->
+        <path d="M566 216 C592 234 614 244 630 246" stroke="#000000" stroke-width="24" fill="none" stroke-linecap="round"/>
+        <path d="M566 216 C592 234 614 244 630 246" stroke="#a678ff" stroke-width="18" fill="none" stroke-linecap="round"/>
+        <path d="M574 204 C602 218 626 232 644 240" stroke="#000000" stroke-width="24" fill="none" stroke-linecap="round"/>
+        <path d="M574 204 C602 218 626 232 644 240" stroke="#a678ff" stroke-width="18" fill="none" stroke-linecap="round"/>
+        <circle cx="634" cy="247" r="9" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <circle cx="648" cy="241" r="9" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <!-- head -->
+        <rect x="566" y="172" width="22" height="16" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <circle cx="578" cy="152" r="27" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <path d="M552 150 C548 122 566 110 586 112 C604 114 610 130 606 146 C598 130 578 126 566 134 C558 138 554 143 552 150 Z" fill="#000000" stroke="#ffffff" stroke-width="3"/>
+        <circle cx="568" cy="158" r="6" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+        <circle cx="590" cy="150" r="4" fill="#000000"/>
+        <path d="M604 148 l12 9 -12 7 z" fill="#ffffff" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M594 166 q7 5 13 1" stroke="#000000" stroke-width="2.5" fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">Projects</p>
+        <h2 class="h2">Building cool stuff.</h2>
+      </div>
+      <div class="grid3">
+
+        <article class="card" data-reveal>
+          <div class="card-art">
+            <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="240" fill="#ffffff"/>
+              <rect x="40" y="40" width="200" height="140" rx="25" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+              <rect x="56" y="56" width="168" height="108" rx="8" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+              <circle cx="118" cy="96" r="5" fill="#000000"/>
+              <circle cx="162" cy="96" r="5" fill="#000000"/>
+              <path d="M124 124 q20 14 40 0" stroke="#000000" stroke-width="3" fill="none"/>
+              <path d="M96 74 l10 14 M184 74 l-10 14" stroke="#000000" stroke-width="3"/>
+              <path d="M270 70 q26 30 0 60 M292 54 q38 46 0 92 M314 40 q48 60 0 120" stroke="#a678ff" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <rect x="260" y="176" width="90" height="34" rx="25" fill="#a678ff" stroke="#000000" stroke-width="3"/>
+            </svg>
+          </div>
+          <span class="mono">ESP32 · OLED · Vosk · Gemini</span>
+          <h3 class="card-name">MoodCat (Mei)</h3>
+          <p>A voice-reactive cat living on an ESP32 OLED screen. Say “Hey Mei” and she wakes; stay quiet 15 seconds and she falls asleep — reactions are pure faces, no robotic movement.</p>
+          <a class="btn btn--sm" data-config="moodcat" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-art">
+            <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="240" fill="#ffffff"/>
+              <rect x="140" y="50" width="120" height="120" rx="25" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+              <path d="M170 90 H230 M170 110 H210 M170 130 H230" stroke="#000000" stroke-width="3"/>
+              <circle cx="230" cy="110" r="6" fill="#a678ff"/>
+              <path d="M140 70 H90 M140 110 H70 M140 150 H90" stroke="#a678ff" stroke-width="5"/>
+              <path d="M260 70 H310 M260 110 H330 M260 150 H310" stroke="#a678ff" stroke-width="5"/>
+              <rect x="40" y="96" width="20" height="28" rx="6" fill="#000000"/>
+              <rect x="340" y="96" width="20" height="28" rx="6" fill="#000000"/>
+              <rect x="120" y="192" width="160" height="30" rx="25" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+              <rect x="136" y="204" width="40" height="6" fill="#a678ff"/>
+              <rect x="184" y="204" width="70" height="6" fill="#000000"/>
+              <rect x="52" y="40" width="44" height="44" rx="25" fill="#a678ff" stroke="#000000" stroke-width="3"/>
+              <rect x="304" y="40" width="44" height="44" rx="25" fill="#a678ff" stroke="#000000" stroke-width="3"/>
+            </svg>
+          </div>
+          <span class="mono">180,800 params · 158KB · 19–42 tok/s</span>
+          <h3 class="card-name">TinytinyLM</h3>
+          <p>A tiny language model shrunk to run on a plain ESP32 with no PSRAM. Forked from a 28.9M TinyLM, redesigned for a much smaller chip — output streamed live on an OLED.</p>
+          <a class="btn btn--sm" data-config="tinytinylm" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-art">
+            <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="240" fill="#ffffff"/>
+              <rect x="60" y="36" width="180" height="168" rx="25" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+              <path d="M88 76 H212 M88 104 H212 M88 160 H212" stroke="#000000" stroke-width="3"/>
+              <rect x="88" y="124" width="124" height="20" rx="6" fill="#a678ff"/>
+              <path d="M88 134 H212" stroke="#000000" stroke-width="3"/>
+              <circle cx="288" cy="130" r="56" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+              <path d="M328 170 L364 206" stroke="#000000" stroke-width="10" stroke-linecap="round"/>
+              <path d="M266 130 l14 14 26 -30" stroke="#a678ff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="mono">Detector · Humanizer · Quest</span>
+          <h3 class="card-name">AI Text Toolkit</h3>
+          <p>An AI text detector and humanizer — presented in the portfolio as a quest rather than just a feature. Written, tested and shipped as a public tool.</p>
+          <a class="btn btn--sm" data-config="toolkit" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">About</p>
+        <h2 class="h2">Figuring tech out.</h2>
+      </div>
+      <div class="about-grid">
+        <div data-reveal>
+          <p class="statement">Building cool stuff, thinking out of the box.</p>
+          <p class="lede">I am a Computer Science Engineering student working on projects across software development, artificial intelligence and IoT. I love learning new things and applying myself to solve real-life problems with code. Apart from technology, I edit videos with DaVinci Resolve.</p>
+        </div>
+        <div class="facts" data-reveal>
+          <div><span>Location</span><span>India</span></div>
+          <div><span>Focus</span><span>Applied AI · LLM APIs</span></div>
+          <div><span>Hardware</span><span>ESP32 · GPS · GSM</span></div>
+          <div><span>Also</span><span>DaVinci Resolve editing</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLKIT -->
+  <section id="toolkit">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">Toolkit</p>
+        <h2 class="h2">What I build with.</h2>
+      </div>
+      <div class="badges" data-reveal>
+        <span class="badge">Python</span>
+        <span class="badge">Flutter</span>
+        <span class="badge">Next.js</span>
+        <span class="badge">Supabase</span>
+        <span class="badge">MongoDB</span>
+        <span class="badge">ESP32</span>
+        <span class="badge">GPS · GSM</span>
+        <span class="badge">Gemini API</span>
+        <span class="badge">LLM integration</span>
+        <span class="badge">Vosk offline STT</span>
+        <span class="badge">On-device LMs</span>
+        <span class="badge">Arduino C++</span>
+        <span class="badge">DaVinci Resolve</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORD -->
+  <section id="record">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">Record</p>
+        <h2 class="h2">Experience &amp; education.</h2>
+      </div>
+      <div class="grid2">
+        <div data-reveal>
+          <p class="mono col-label">Experience</p>
+          <div class="entry">
+            <span class="mono">2024 · 2 weeks</span>
+            <h3>Artificial Intelligence Intern, InAmigos Foundation</h3>
+            <p>Project-based work, team collaboration, and building technical and professional skills.</p>
+          </div>
+          <div class="entry">
+            <span class="mono">2022 — 2024 · Freelance</span>
+            <h3>Fiction Editor — Kartik Batra</h3>
+            <p><em>Invisible Past: World with Many Dimensions</em> (Dec 2022, ~6 months). <em>Starfinity: Journey Beyond Universe</em> (Feb–Jul 2024, released Jul 2024 via Authors' Choice).</p>
+          </div>
+        </div>
+        <div data-reveal>
+          <p class="mono col-label">Education</p>
+          <div class="entry">
+            <span class="mono">2024 — 2028</span>
+            <h3>SG Balekundri Institute of Technology</h3>
+            <p>Bachelor of Technology, Computer Science.</p>
+          </div>
+          <div class="entry">
+            <span class="mono">2022 — 2025</span>
+            <h3>R. N. Shetty Polytechnic</h3>
+            <p>Diploma of Education, Computer Science — grade 7.88.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER / CONTACT -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--light" data-reveal>Say hello</p>
+    <p class="say" data-reveal>Say hello.</p>
+    <div class="foot-cta-row" data-reveal>
+      <a class="btn btn--primary" data-config="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn--onblack" data-config="github" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn--onblack" data-config="email" target="_blank" rel="noopener">Email ↗</a>
+    </div>
+    <div class="foot-cols">
+      <nav aria-label="Footer">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#record">Record</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+      <div class="social">
+        <a data-config="github" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+        </a>
+        <a data-config="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-base mono">
+      <span>© <span data-year>2026</span> Aditya Ganeshgudi · India</span>
+      <span>Figuring tech out. Building cool stuff.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
