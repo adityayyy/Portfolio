@@ -35,22 +35,6 @@ tokens.json / variables.css / theme.css   Generated token exports (reference).
   `localStorage["theme"]` (`"light"` / `"dark"`). Menu open state is transient
   (DOM class + `aria-expanded`). No global store is needed for a page this size.
 
-## Error-handling policy
-
-Every module fails soft:
-
-- DOM lookups are guarded; a missing element skips that module silently
-  (except config keys, which `console.warn` and hide the broken link).
-- `localStorage` access is wrapped in try/catch (fails to in-memory theme).
-- Reveal animation falls back to fully visible content if
-  `IntersectionObserver` or motion is unavailable.
-- The one inline script (pre-paint theme) try/catches and defaults to light —
-  it must stay inline to avoid a theme flash; everything else is external.
-
-## Publish
-
-- **Netlify Drop:** drag the folder onto https://app.netlify.com/drop
-- **GitHub Pages:** push this folder to a repo → Settings → Pages → main/root.
 
 ## Deliberately not here
 
